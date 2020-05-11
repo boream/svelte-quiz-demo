@@ -3,6 +3,8 @@
 
 # svelte demo quiz app
 
+![](public/svelte-quiz-short.gif)
+
 Esta app es un cuestionario simple construido con Svelte para mostrar su funcionamiento y hacer un repaso de algunas de sus características:
 
 * Sintaxis y operadores lógicos para construir templates
