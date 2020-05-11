@@ -1,93 +1,36 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
 
-# svelte app
+# svelte demo quiz app
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Esta app es un cuestionario simple construido con Svelte para mostrar su funcionamiento y hacer un repaso de algunas de sus características:
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+* Sintaxis y operadores lógicos para construir templates
+* Componentización de una interfaz
+* Encapsulación de estilos
+* Ciclo de vida de componentes
+* Comunicación entre componentes
+    * Pasar propiedades a un hijo
+    * Emisión de eventos desde un hijo
+* Propiedades reactivas
+* Manejo de eventos
+* Uso de Slots
+* Uso de transiciones y animaciones incluidas en Svelte
+* Etiquetas especiales (ej: `<svelte:head>`)
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+## Cómo empezar
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
+Instalar las dependencias...
 
 ```bash
 cd svelte-app
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+...y ejecutarlo [Rollup](https://rollupjs.org):
 
 ```bash
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now deploy --name my-project
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+En tu navegador en la dirección [localhost:5000](http://localhost:5000) podrás ver la app en funcionamiento. Edita cualquier componente en `src/components` y guárdalo para ver cómo se recarga y se muestran los cambios.

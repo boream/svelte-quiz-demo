@@ -26,13 +26,6 @@
 
 </script>
 
-<!-- 
-    Un elemento sólo puede tener un único atributo CLASS
-    por eso no podemos hacer 'class' y class="{prop}"
-
-    así que hay que meter una propiedad computada
- -->
-
 <output class={classAndClassModifier} in:fly="{{ y: 32, duration: 560 }}" out:fly="{{ y: -24, duration: 400 }}" role="alert">
     {#if icon}
         <svg class="toast__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-describedby="toast-title toast-description" role="img">
